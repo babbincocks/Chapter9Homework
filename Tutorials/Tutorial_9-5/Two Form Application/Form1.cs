@@ -17,6 +17,7 @@ namespace Two_Form_Application
             InitializeComponent();
         }
 
+        //Creates a new instance of the other form, and modally opens it.
         private void btnDisplay_Click(object sender, EventArgs e)
         {
             MessageForm newMessageFrm = new MessageForm();

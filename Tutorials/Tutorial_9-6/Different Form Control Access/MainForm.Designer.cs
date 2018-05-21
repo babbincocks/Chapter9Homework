@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rbBanana = new System.Windows.Forms.RadioButton();
-            this.rbPopcorn = new System.Windows.Forms.RadioButton();
             this.rbMuffin = new System.Windows.Forms.RadioButton();
+            this.rbPopcorn = new System.Windows.Forms.RadioButton();
+            this.rbBanana = new System.Windows.Forms.RadioButton();
             this.btnDisplay = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -49,16 +49,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Select a food";
             // 
-            // rbBanana
+            // rbMuffin
             // 
-            this.rbBanana.AutoSize = true;
-            this.rbBanana.Location = new System.Drawing.Point(27, 35);
-            this.rbBanana.Name = "rbBanana";
-            this.rbBanana.Size = new System.Drawing.Size(70, 17);
-            this.rbBanana.TabIndex = 0;
-            this.rbBanana.TabStop = true;
-            this.rbBanana.Text = "1 banana";
-            this.rbBanana.UseVisualStyleBackColor = true;
+            this.rbMuffin.AutoSize = true;
+            this.rbMuffin.Location = new System.Drawing.Point(27, 81);
+            this.rbMuffin.Name = "rbMuffin";
+            this.rbMuffin.Size = new System.Drawing.Size(134, 17);
+            this.rbMuffin.TabIndex = 2;
+            this.rbMuffin.TabStop = true;
+            this.rbMuffin.Text = "1 large blueberry muffin";
+            this.rbMuffin.UseVisualStyleBackColor = true;
             // 
             // rbPopcorn
             // 
@@ -71,16 +71,16 @@
             this.rbPopcorn.Text = "1 cup of popped popcorn";
             this.rbPopcorn.UseVisualStyleBackColor = true;
             // 
-            // rbMuffin
+            // rbBanana
             // 
-            this.rbMuffin.AutoSize = true;
-            this.rbMuffin.Location = new System.Drawing.Point(27, 81);
-            this.rbMuffin.Name = "rbMuffin";
-            this.rbMuffin.Size = new System.Drawing.Size(134, 17);
-            this.rbMuffin.TabIndex = 2;
-            this.rbMuffin.TabStop = true;
-            this.rbMuffin.Text = "1 large blueberry muffin";
-            this.rbMuffin.UseVisualStyleBackColor = true;
+            this.rbBanana.AutoSize = true;
+            this.rbBanana.Location = new System.Drawing.Point(27, 35);
+            this.rbBanana.Name = "rbBanana";
+            this.rbBanana.Size = new System.Drawing.Size(70, 17);
+            this.rbBanana.TabIndex = 0;
+            this.rbBanana.TabStop = true;
+            this.rbBanana.Text = "1 banana";
+            this.rbBanana.UseVisualStyleBackColor = true;
             // 
             // btnDisplay
             // 
@@ -100,6 +100,7 @@
             this.btnExit.TabIndex = 2;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // MainForm
             // 

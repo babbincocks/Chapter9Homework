@@ -18,7 +18,7 @@ namespace Different_Form_Control_Access
         }
 
         private void btnClose_Click(object sender, EventArgs e)
-        {
+        {       //As it's modally displayed, only this form will close if the Close button is clicked.
             Close();
         }
     }

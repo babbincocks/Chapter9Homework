@@ -14,6 +14,7 @@ namespace Cellphone
         private string model;
         private decimal price;
 
+        //Constructor to contain the default values for the backing fields.
         public Cellphone()
         {
             brand = "";
@@ -21,12 +22,14 @@ namespace Cellphone
             price = 0m;
         }
 
+        //Accessor for the phone brand.
         public string Brand
         {
             get { return brand; }
             set { brand = value; }
         }
 
+        //Accessor for the phone model.
         public string Model
         {
             get { return model; }
@@ -34,6 +37,7 @@ namespace Cellphone
 
         }
 
+        //Accessor for the price model.
         public decimal Price
         {
             get { return price; }

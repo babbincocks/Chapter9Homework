@@ -17,16 +17,15 @@ namespace Cellphone
             InitializeComponent();
         }
 
-        //Method to set all of the variables with the values that the user put in.
+        //This method accepts a Cellphone variable, and puts what's been put into the text boxes into the phone's backing fields.
         private void GetPhoneData(Cellphone phone)
         {
-            decimal price;
-
+                
             phone.Brand = txtBrand.Text;
 
             phone.Model = txtModel.Text;
 
-            if (decimal.TryParse(txtPrice.Text, out price))
+            if (decimal.TryParse(txtPrice.Text, out decimal price))
             {
                 phone.Price = price;
             }

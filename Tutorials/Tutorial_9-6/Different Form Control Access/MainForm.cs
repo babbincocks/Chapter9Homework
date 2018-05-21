@@ -17,10 +17,15 @@ namespace Different_Form_Control_Access
             InitializeComponent();
         }
 
+        
         private void btnDisplay_Click(object sender, EventArgs e)
-        {
+        {       //Code for the Display button.
+
+            //Creates a new instance of the other Windows form.
             NutritionForm newForm = new NutritionForm();
 
+            //Then checks which radio button is clicked and populates the fields of this new form with the information of the item that was
+            //clicked.
             if (rbBanana.Checked)
             {
                 newForm.lblFood.Text = "1 banana";
@@ -43,7 +48,13 @@ namespace Different_Form_Control_Access
                 newForm.lblCarb.Text = "67";
             }
 
+            //Then it displays the form.
             newForm.ShowDialog();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

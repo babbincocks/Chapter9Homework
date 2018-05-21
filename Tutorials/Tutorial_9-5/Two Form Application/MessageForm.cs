@@ -16,7 +16,7 @@ namespace Two_Form_Application
         {
             InitializeComponent();
         }
-
+        //Since this form is modal, it will close only this form if closed.
         private void btnClose_Click(object sender, EventArgs e)
         {
             Close();

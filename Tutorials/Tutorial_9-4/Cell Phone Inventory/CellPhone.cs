@@ -8,11 +8,12 @@ namespace Cell_Phone_Inventory
 {
     class CellPhone
     {
-
+            //Backing variabls to hold the different aspects of a cell phone.
             private string brand;
             private string model;
             private decimal price;
 
+            //Constructor to set the default values.
             public CellPhone()
             {
                 brand = "";
@@ -20,12 +21,14 @@ namespace Cell_Phone_Inventory
                 price = 0m;
             }
 
+            //Method to return the phone brand.
             public string Brand
             {
                 get { return brand; }
                 set { brand = value; }
             }
 
+            //Method to return the phone model.
             public string Model
             {
                 get { return model; }
@@ -33,6 +36,7 @@ namespace Cell_Phone_Inventory
 
             }
 
+            //Method to return the phone price.
             public decimal Price
             {
                 get { return price; }
