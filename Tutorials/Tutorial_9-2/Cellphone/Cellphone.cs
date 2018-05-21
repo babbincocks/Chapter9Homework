@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 namespace Cellphone
 {
     class Cellphone
-    {
+    {   //Very simple Cellphone class.
+
+        //Three backing fields are created for the different aspects of the cell phone object.
         private string brand;
         private string model;
         private decimal price;

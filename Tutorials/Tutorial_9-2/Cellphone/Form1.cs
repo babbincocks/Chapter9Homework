@@ -17,6 +17,7 @@ namespace Cellphone
             InitializeComponent();
         }
 
+        //Method to set all of the variables with the values that the user put in.
         private void GetPhoneData(Cellphone phone)
         {
             decimal price;
@@ -35,6 +36,7 @@ namespace Cellphone
             }
         }
 
+        //Retrieves the values put into the text boxes, and puts them into the labels.
         private void btnCreate_Click(object sender, EventArgs e)
         {
             Cellphone currentPhone = new Cellphone();

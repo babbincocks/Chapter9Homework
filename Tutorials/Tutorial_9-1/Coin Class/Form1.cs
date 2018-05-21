@@ -17,12 +17,15 @@ namespace Coin_Class
             InitializeComponent();
         }
 
-        private void btnToss_Click(object sender, EventArgs e)
-        {
-            Coin flip = new Coin();
 
+        private void btnToss_Click(object sender, EventArgs e)
+        {       //Code for the Coin Toss button.
+
+            //New coin is created and all previous coin toss results are erased.
+            Coin flip = new Coin();
             lbOutput.Items.Clear();
 
+            //Coin is tosed 5 times, and the result is added each time.
             for (int count = 0; count < 5; count++)
             {
                 flip.Toss();

@@ -8,11 +8,12 @@ namespace Coin_Class
 {
     class Coin
     {
+        //Random object and a string to hold the result of the random object are created.
         private string whichSide;
         Random Rand = new Random();
 
         public Coin()
-        {
+        {   //Coin state starts as heads.
             whichSide = "Heads";
         }
 
@@ -20,7 +21,7 @@ namespace Coin_Class
         {
 
             if (Rand.Next(2) == 0)
-            {
+            {   //Random object is used that can only have two values. If one result, it does heads, else it does tails.
                 whichSide = "Heads";
             }
 
@@ -32,7 +33,7 @@ namespace Coin_Class
         }
 
         public string GetSide()
-        {
+        {   //Returns the results of the coin flip.
             return whichSide;
         }
 
